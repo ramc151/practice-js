@@ -1,0 +1,27 @@
+<script>
+    function substring(a1, a2) {
+        let M = a1.length;
+        let N = a2.length;
+
+        for (let i = 0; i <= N - M; i++) {
+            let j;
+            for (j = 0; j < M; j++) {
+                if (a2[i + j] != a1[j])
+                    break;
+            }
+            if (j == M)
+                return i
+        }
+        return -1
+    }
+
+    var a1 = 'for';
+    var a2 = 'geeksforgeeks';
+
+    var res = substring(a1, a2)
+    if (res == -1) {
+        console.log('Not Present')
+    } else {
+        console.log('Present at index', res)
+    }
+</script>

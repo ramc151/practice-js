@@ -1,0 +1,27 @@
+<!-- <script>
+    function remspace(str) {
+        var count = 0;
+        for (var i = 0; i < str.length; i++) {
+            if (str[i] !== " ")
+                str[count++] = str[i]
+        }
+        return count
+    }
+
+
+    var str = "g   eeks  fo  r ge  eks".split("");
+    var a = remspace(str)
+    console.log(str.join("").substring(0, a))
+</script> -->
+
+<script>
+    function remspace(str) {
+        str = str.replace(/\s/g, "")
+        return str
+    }
+
+    var str = "g   eeks  fo  r ge  eks"
+    var a = remspace(str)
+    console.log(a)
+
+</script>
