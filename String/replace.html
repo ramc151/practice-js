@@ -1,6 +1,26 @@
 <script>
-    let string = 'Hello world';
-    let s1 = 'world';
+    function repstr(string, s1, s2) {
+        var a = string.split(" ").length;
+        var b = s1.split(" ").length;
 
-    console.log(string.replace(s1, 'globe'))
+        for (var i = 0; i <= a - b; i++) {
+            var j;
+            for (j = 0; j < b; j++) {
+                if (string[i + j] !== s1[j])
+                    break;
+            }
+            // if (j == b)
+            string[i] = s2;
+            return string;
+        }
+    }
+
+    var string = 'Hello world';
+    var s1 = 'world';
+    var s2 = 'globe';
+
+    var ans = repstr(string, s1, s2)
+    console.log(ans)
+
+    // console.log(string.replace(s1, 'globe'))
 </script>
