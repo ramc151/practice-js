@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="changeFont(event)">Click for Change</button>
+    <script>
+        function changeFont(event) {
+            event.target.style.fontSize = "32px";
+            changeColor(event);
+        }
+        function changeColor(event) {
+            event.target.style.color = "red";
+        }
+    </script>
+</body>
+
+</html>
